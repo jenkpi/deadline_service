@@ -1,6 +1,5 @@
-def main():
-    print("Hello from deadline-service!")
+from faststream import FastStream
+from app.kafka.kafka_broker import broker
 
 
-if __name__ == "__main__":
-    main()
+app = FastStream(broker)
